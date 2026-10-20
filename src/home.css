@@ -1739,3 +1739,24 @@
     font-size: 11px;
   }
 }
+
+/* Give the film its own full-width canvas and preserve the source composition. */
+.home-page .home-hero{width:100%;max-width:none;margin:0}
+.home-page .home-hero-stage{margin-top:30px;padding:0;transform:none;background:transparent}
+.home-page .home-film-frame{width:100%;height:auto;aspect-ratio:16/9;border-radius:0;background:#e7e7df}
+.home-page .home-film-frame video{width:100%;height:100%;object-fit:contain;object-position:center}
+.home-page .stage-header{padding-bottom:16px}
+.home-page .stage-footer{margin-top:22px;margin-bottom:10px;gap:25px;align-items:start}
+.home-page .stage-footer>span{max-width:none;text-align:right;flex-shrink:0}
+.home-page .home-film-toggle{left:clamp(20px,4vw,64px);bottom:26px}
+.home-page .home-film-open{right:clamp(20px,4vw,64px);bottom:26px}
+@media(max-width:600px){
+.home-page .home-hero-stage{margin-top:28px}
+.home-page .stage-header{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
+.home-page .stage-header>span:last-child{grid-column:1/-1}
+.home-page .home-film-open{bottom:14px;right:16px;padding:10px 13px;font-size:11px}
+.home-page .home-film-toggle{bottom:14px;left:16px}
+.home-page .stage-footer{display:block;margin-top:18px}
+.home-page .stage-footer p{max-width:none;font-size:24px}
+.home-page .stage-footer>span{display:block;text-align:left;margin-top:12px}
+}
