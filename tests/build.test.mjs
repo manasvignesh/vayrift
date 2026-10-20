@@ -17,7 +17,7 @@ test("production build contains only standalone branding and safe public assets"
   const config = JSON.parse(
     await readFile(join(root, "dist/config.json"), "utf8"),
   );
-  assert.equal(config.contact_email, "");
+  assert.equal(config.contact_email, "vayrift11@gmail.com");
   assert.equal(config.inquiry_enabled, false);
   assert.equal(config.production_url, "");
   assert.deepEqual(config.founders, []);

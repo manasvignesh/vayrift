@@ -19,7 +19,7 @@ Edit brand.json for the agency name, display wordmark, tagline, location, Instag
 
 ## Contact setup
 
-Public email is intentionally blank; submission is disabled. Setting a real contact_email alone enables the existing manual mailto workflow: it prepares an email in the visitor's own email app and explicitly says nothing was sent or stored. No server delivery is implied.
+Public inquiries go to vayrift11@gmail.com via the manual mailto workflow: it prepares an email in the visitor's own email app and explicitly says nothing was sent or stored. No server delivery is implied.
 
 For direct delivery, deploy functions/inquiry.mjs behind a same-origin /api/inquiry route (the included Node server supports it). Set inquiry_enabled and turnstile_site_key in brand.json, plus INQUIRY_ENABLED=true, RESEND_API_KEY, INQUIRY_FROM (verified sender), INQUIRY_TO (studio inbox), ALLOWED_ORIGIN (exact actual origin) and TURNSTILE_SECRET in server-only environment variables. .env.example contains empty placeholders. A static-only host must keep direct submission off unless a function adapter is configured.
 

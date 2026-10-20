@@ -62,17 +62,17 @@
       </nav>
       <div class="eyebrow"><span class="status-dot"></span> PROJECT INQUIRY &amp; BRIEFING</div>
       <h1>Tell us about your space.</h1>
-      <p class="subpage-lead">Tell us about your idea, the available assets and what you’d like to achieve. Inquiry delivery will be available once the studio’s contact details are configured.</p>
+      <p class="subpage-lead">Tell us about your idea, the available assets and what you’d like to achieve. Prepare your inquiry below, then review and send it through your email app to {{contact_email}}.</p>
     <div class="contact-intro-links"><a href="{{instagram}}" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a><span>HYDERABAD / OPEN TO IDEAS</span></div></header>
 
     <!-- SECTION: CONTACT & INQUIRY FORM -->
     <section id="inquiry" class="contact-section" aria-labelledby="contact-heading">
-      <div class="brief-guide"><p class="eyebrow">LET’S FIND YOUR STARTING POINT</p><div><button data-brief="property-film"><span>01</span><strong>A film for my property</strong><b>↗</b></button><button data-brief="website-foundation"><span>02</span><strong>A new home online</strong><b>↗</b></button><button data-brief="brand-launch"><span>03</span><strong>A fresh brand direction</strong><b>↗</b></button></div><p class="brief-feedback" aria-live="polite">Choose a direction. Your brief form will reflect it; submission stays disabled until contact details are configured.</p></div><div class="contact-grid">
+      <div class="brief-guide"><p class="eyebrow">LET’S FIND YOUR STARTING POINT</p><div><button data-brief="property-film"><span>01</span><strong>A film for my property</strong><b>↗</b></button><button data-brief="website-foundation"><span>02</span><strong>A new home online</strong><b>↗</b></button><button data-brief="brand-launch"><span>03</span><strong>A fresh brand direction</strong><b>↗</b></button></div><p class="brief-feedback" aria-live="polite">Choose a direction to prefill your brief. The form prepares an email for you to review and send; it does not send automatically.</p></div><div class="contact-grid">
         <!-- Form Column -->
         <div class="form-container">
           <h2 id="contact-heading" class="sr-only">Project Inquiry Form</h2>
           <form id="inquiry-form" class="inquiry-form" novalidate="" aria-describedby="contact-state">
-            <div id="contact-state" class="state-banner" role="status" aria-live="polite">Public inquiry submission is disabled until a real contact address and delivery method are configured. You can find the studio on Instagram.</div>
+            <div id="contact-state" class="state-banner" role="status" aria-live="polite">Email the studio at {{contact_email}}. Enable JavaScript to prepare a project brief in your email app.</div>
 
             <fieldset id="inquiry-fields" disabled="">
               <legend class="sr-only">Project Inquiry Details</legend>
@@ -166,7 +166,7 @@
               An independent creative studio based in Hyderabad, India, serving property owners and hospitality operators globally.
             </p>
             <div class="contact-links">
-              <a id="contact-email" class="text-link" hidden=""></a>
+              <a id="contact-email" class="text-link" href="mailto:{{contact_email}}">{{contact_email}}</a>
             <a href="{{instagram}}" target="_blank" rel="noopener noreferrer">@vayrift on Instagram ↗</a></div>
           </div>
 

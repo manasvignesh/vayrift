@@ -104,7 +104,7 @@
       // Controlled mailto fallback mode (email configured, but server delivery is in preview)
       fields.disabled = false;
       if (submitBtn) submitBtn.disabled = false;
-      contactState.textContent = 'Tell us about your project. We will respond to your inquiry; we do not add you to a marketing list.';
+      contactState.textContent = 'This form prepares an email to ' + state.config.contact_email + '. Review and send it in your email app; nothing is sent automatically.';
       if (submitText) submitText.textContent = 'Prepare inquiry email';
       if (contactEmailLink) {
         contactEmailLink.hidden = false;
