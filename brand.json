@@ -1,0 +1,15 @@
+{
+  "agency_name": "VAYRIFT Studio",
+  "display_name": "VAYRIFT.",
+  "supporting_label": "CREATIVE STUDIO",
+  "tagline": "Ideas in motion.",
+  "location": "Hyderabad, India",
+  "instagram": "https://instagram.com/vayrift",
+  "future_domain": "vayrift.com",
+  "production_url": "",
+  "contact_email": "",
+  "inquiry_enabled": false,
+  "inquiry_endpoint": "/api/inquiry",
+  "turnstile_site_key": "",
+  "founders": []
+}

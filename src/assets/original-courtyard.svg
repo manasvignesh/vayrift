@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c18"/>
+      <stop offset="50%" stop-color="#1b2520"/>
+      <stop offset="100%" stop-color="#24332c"/>
+    </linearGradient>
+    <linearGradient id="warmWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d6cebd"/>
+      <stop offset="60%" stop-color="#bfb6a0"/>
+      <stop offset="100%" stop-color="#9a907a"/>
+    </linearGradient>
+    <linearGradient id="ambientLight" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffd599" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#e6ad65" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a86e3b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34281e"/>
+      <stop offset="100%" stop-color="#1a140f"/>
+    </linearGradient>
+    <linearGradient id="accentBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe4b5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffe4b5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="filmGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.65" numOctaves="3" result="noise" seed="5"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <!-- Background Space -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- Architectural Structure -->
+  <g filter="url(#filmGrain)">
+    <!-- Back Wall -->
+    <path d="M 280 180 L 1640 180 L 1780 820 L 140 820 Z" fill="url(#warmWall)"/>
+
+    <!-- Floor with warm reflection -->
+    <path d="M 140 820 L 1780 820 L 1920 1080 L 0 1080 Z" fill="url(#floor)"/>
+    <polygon points="680,820 1240,820 1480,1080 440,1080" fill="url(#ambientLight)" opacity="0.25"/>
+
+    <!-- Main Architectural Arches -->
+    <!-- Center Arch -->
+    <path d="M 720 820 L 720 440 Q 960 220 1200 440 L 1200 820 Z" fill="#24332b"/>
+    <path d="M 740 820 L 740 450 Q 960 240 1180 450 L 1180 820 Z" fill="#18231e"/>
+    <!-- Courtyard Foliage & Light Silhouette through Center Arch -->
+    <ellipse cx="960" cy="580" rx="180" ry="240" fill="#2e4237" opacity="0.4"/>
+    <circle cx="960" cy="460" r="140" fill="#4d6b59" opacity="0.25"/>
+    <path d="M 880 820 Q 960 620 940 500 Q 1000 640 1040 820 Z" fill="#1a2e24"/>
+
+    <!-- Left Arch -->
+    <path d="M 340 820 L 340 480 Q 480 340 620 480 L 620 820 Z" fill="#2b3b33"/>
+    <path d="M 360 820 L 360 490 Q 480 360 600 490 L 600 820 Z" fill="url(#ambientLight)" opacity="0.7"/>
+
+    <!-- Right Arch -->
+    <path d="M 1300 820 L 1300 480 Q 1440 340 1580 480 L 1580 820 Z" fill="#2b3b33"/>
+    <path d="M 1320 820 L 1320 490 Q 1440 360 1560 490 L 1560 820 Z" fill="url(#ambientLight)" opacity="0.7"/>
+
+    <!-- Light Shaft -->
+    <polygon points="360,490 600,490 1000,1080 300,1080" fill="url(#accentBeam)"/>
+
+    <!-- Ceiling / Arch Beams -->
+    <line x1="280" y1="180" x2="1640" y2="180" stroke="#7e7663" stroke-width="12"/>
+    <line x1="720" y1="440" x2="1200" y2="440" stroke="#544e3f" stroke-width="6"/>
+
+    <!-- Perimeter Columns -->
+    <rect x="240" y="160" width="80" height="680" fill="#b0a690"/>
+    <rect x="1600" y="160" width="80" height="680" fill="#8c836e"/>
+
+    <!-- Atmospheric Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#070c0a" stop-opacity="0.75"/>
+    </radialGradient>
+    <rect width="1920" height="1080" fill="url(#vignette)"/>
+  </g>
+
+  <!-- Elegant Editorial Badging -->
+  <g font-family="Georgia, serif">
+    <text x="120" y="140" font-size="20" fill="#a4b59d" letter-spacing="4" font-family="'Segoe UI', Arial, sans-serif">{{agency_name}}</text>
+    <text x="120" y="180" font-size="14" fill="#75876f" letter-spacing="3" font-family="'Segoe UI', Arial, sans-serif">CINEMATIC PROPERTY FILM · SAMPLE DEMONSTRATION</text>
+    
+    <text x="120" y="940" font-size="52" fill="#faf8f2" font-weight="400">The Courtyard Suite</text>
+    <text x="120" y="980" font-size="18" fill="#d2c5af" font-family="'Segoe UI', Arial, sans-serif" letter-spacing="2">FROM STILL PHOTOGRAPHY TO CINEMATIC MOTION</text>
+    
+    <text x="1800" y="980" font-size="18" fill="#a4b59d" font-family="'Segoe UI', Arial, sans-serif" text-anchor="end" letter-spacing="2">16:9 MASTER · 12s LOOP</text>
+  </g>
+</svg>

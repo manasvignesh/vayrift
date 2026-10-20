@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start a Project — {{agency_name}}</title>
+  <meta name="description" content="Inquire about cinematic property films, hospitality website development, or brand packages with {{agency_name}} in Hyderabad.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="studio.css"><link rel="stylesheet" href="art-direction.css">
+<link rel="stylesheet" href="experience.css"><link rel="stylesheet" href="branding.css"><meta property="og:site_name" content="{{agency_name}}"><meta property="og:title" content="{{agency_name}} — {{tagline}}"><meta property="og:description" content="{{tagline}} Creative films, websites and visual identity from Hyderabad."><link rel="stylesheet" href="refinement.css"></head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header / Masthead -->
+  <header class="masthead" role="banner">
+    <a href="index.html" class="brand" aria-label="{{agency_name}} homepage">
+      <span class="wordmark">{{display_name}}</span>
+      <div class="brand-text"><strong class="brand-support">{{supporting_label}}</strong><span class="location-label" data-brand-location="">{{tagline}}</span></div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-contact active" aria-current="page">Start a Project <span aria-hidden="true">→</span></a>
+    </nav>
+
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+      Menu
+    </button>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="wordmark">{{display_name}}</span>
+        <button id="nav-close" class="nav-close" aria-label="Close navigation menu">✕</button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="work.html" class="mobile-link">Work &amp; Case Studies</a>
+        <a href="services.html" class="mobile-link">Services &amp; Pricing</a>
+        <a href="about.html" class="mobile-link">About the Studio</a>
+        <a href="contact.html" class="mobile-link active mobile-contact-cta" aria-current="page">Start a Project →</a>
+      </div>
+      <div class="mobile-nav-footer">
+        <p class="eyebrow">STUDIO DIRECT</p>
+        <p><span data-agency="">{{agency_name}}</span></p>
+        <p>Hyderabad, Telangana, India</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content" class="shell">
+    <!-- Subpage Header -->
+    <header class="subpage-hero">
+      <nav class="subpage-nav-crumbs" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Start a Project</span>
+      </nav>
+      <div class="eyebrow"><span class="status-dot"></span> PROJECT INQUIRY &amp; BRIEFING</div>
+      <h1>Tell us about your space.</h1>
+      <p class="subpage-lead">Tell us about your idea, the available assets and what you’d like to achieve. Inquiry delivery will be available once the studio’s contact details are configured.</p>
+    <div class="contact-intro-links"><a href="{{instagram}}" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a><span>HYDERABAD / OPEN TO IDEAS</span></div></header>
+
+    <!-- SECTION: CONTACT & INQUIRY FORM -->
+    <section id="inquiry" class="contact-section" aria-labelledby="contact-heading">
+      <div class="brief-guide"><p class="eyebrow">LET’S FIND YOUR STARTING POINT</p><div><button data-brief="property-film"><span>01</span><strong>A film for my property</strong><b>↗</b></button><button data-brief="website-foundation"><span>02</span><strong>A new home online</strong><b>↗</b></button><button data-brief="brand-launch"><span>03</span><strong>A fresh brand direction</strong><b>↗</b></button></div><p class="brief-feedback" aria-live="polite">Choose a direction. Your brief form will reflect it; submission stays disabled until contact details are configured.</p></div><div class="contact-grid">
+        <!-- Form Column -->
+        <div class="form-container">
+          <h2 id="contact-heading" class="sr-only">Project Inquiry Form</h2>
+          <form id="inquiry-form" class="inquiry-form" novalidate="" aria-describedby="contact-state">
+            <div id="contact-state" class="state-banner" role="status" aria-live="polite">Public inquiry submission is disabled until a real contact address and delivery method are configured. You can find the studio on Instagram.</div>
+
+            <fieldset id="inquiry-fields" disabled="">
+              <legend class="sr-only">Project Inquiry Details</legend>
+
+              <div class="form-row">
+                <label for="inq-name">Your name <span class="req" aria-hidden="true">*</span>
+                  <input id="inq-name" name="name" autocomplete="name" required="" maxlength="120" placeholder="e.g. Elena Vance">
+                  <span class="field-error" id="err-name" role="alert" aria-live="polite"></span>
+                </label>
+
+                <label for="inq-email">Email address <span class="req" aria-hidden="true">*</span>
+                  <input id="inq-email" name="email" type="email" autocomplete="email" required="" maxlength="254" placeholder="elena@example.com">
+                  <span class="field-error" id="err-email" role="alert" aria-live="polite"></span>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label for="inq-business">Business / property name
+                  <input id="inq-business" name="business" maxlength="180" placeholder="e.g. The Hillside Villa">
+                </label>
+
+                <label for="inq-website">Website or Instagram URL (optional)
+                  <input id="inq-website" name="website" type="url" maxlength="254" placeholder="https://instagram.com/yourproperty">
+                </label>
+              </div>
+
+              <label for="inq-service">Interested service / package
+                <select id="inq-service" name="service" required="">
+                  <option value="property-film">Property Film Starter</option>
+                  <option value="website-foundation">Website Foundation</option>
+                  <option value="brand-launch">Brand &amp; Launch</option>
+                  <option value="custom">Custom Production Scope</option>
+                  <option value="general">General Creative Inquiry</option>
+                </select>
+              </label>
+
+              <div class="form-row">
+                <label for="inq-budget">Estimated budget range (optional)
+                  <select id="inq-budget" name="budget">
+                    <option value="">Select range...</option>
+                    <option value="under-50k">Under ₹50,000 (&lt; $600 USD)</option>
+                    <option value="50k-150k">₹50,000 – ₹1,50,000 ($600 – $1,800 USD)</option>
+                    <option value="150k-300k">₹1,50,000 – ₹3,00,000 ($1,800 – $3,600 USD)</option>
+                    <option value="above-300k">Above ₹3,00,000 ($3,600+ USD)</option>
+                  </select>
+                </label>
+
+                <label for="inq-timeline">Target launch timeline (optional)
+                  <select id="inq-timeline" name="timeline">
+                    <option value="">Select timeline...</option>
+                    <option value="immediate">Immediate (Next 1–2 weeks)</option>
+                    <option value="this-month">This month (2–4 weeks)</option>
+                    <option value="next-quarter">Next quarter (1–3 months)</option>
+                    <option value="exploring">Just exploring options</option>
+                  </select>
+                </label>
+              </div>
+
+              <label for="inq-message">A little about your project <span class="req" aria-hidden="true">*</span>
+                <textarea id="inq-message" name="message" rows="4" required="" maxlength="3000" placeholder="Tell us about the property, what assets you currently have, and what you would like to achieve..."></textarea>
+                <span class="field-error" id="err-message" role="alert" aria-live="polite"></span>
+              </label>
+
+              <!-- Anti-spam Honeypot (hidden from legitimate users) -->
+              <div class="hp-wrap" aria-hidden="true" style="display:none !important">
+                <label for="inq-hp">Leave this empty</label>
+                <input type="text" id="inq-hp" name="_hp" tabindex="-1" autocomplete="off">
+              </div>
+
+              <label class="consent" for="inq-consent">
+                <input id="inq-consent" name="consent" type="checkbox" required="">
+                <span>I’d like the studio to respond to this specific inquiry. No unrelated marketing permission is granted. <span class="req" aria-hidden="true">*</span></span>
+              </label>
+
+              <button class="submit" id="inq-submit" type="submit" disabled="">
+                <span id="submit-text">Prepare inquiry email</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </button>
+            </fieldset>
+
+            <div id="form-result" class="form-result" role="region" aria-live="polite"></div>
+          <div id="turnstile-container"></div></form>
+        </div>
+
+        <!-- Sidebar Column -->
+        <aside class="contact-sidebar" aria-label="Studio Contact Details">
+          <div class="sidebar-block">
+            <span class="eyebrow">DIRECT CONTACT</span>
+            <h3>{{agency_name}}</h3>
+            <p class="sidebar-text">
+              An independent creative studio based in Hyderabad, India, serving property owners and hospitality operators globally.
+            </p>
+            <div class="contact-links">
+              <a id="contact-email" class="text-link" hidden=""></a>
+            <a href="{{instagram}}" target="_blank" rel="noopener noreferrer">@vayrift on Instagram ↗</a></div>
+          </div>
+
+          <div class="sidebar-block">
+            <span class="eyebrow">WHAT TO EXPECT</span>
+            <ul class="expectation-list">
+              <li><strong>Direct conversation:</strong> Work with the two studio founders.</li>
+              <li>
+                <strong>Creative Assessment:</strong> We will review your photos or existing website and recommend the best format.
+              </li>
+              <li>
+                <strong>Zero Obligation:</strong> No high-pressure sales calls. We provide transparent pricing and clear timelines upfront.
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-block privacy-note">
+            <span class="eyebrow">DATA RESPECT</span>
+            <p class="small-text">
+              Your details are used exclusively to evaluate and reply to this inquiry. We never share, sell, or add your information to automated marketing sequences.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer role="contentinfo">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="wordmark">{{display_name}}</span>
+        <span data-agency="">{{agency_name}}</span>
+      </a>
+      <p class="footer-tagline">{{tagline}}</p>
+    </div>
+
+    <div class="footer-meta">
+      <p>HYDERABAD, INDIA · TWO-PERSON INDEPENDENT STUDIO<br>Commercial demonstrations &amp; concept studies. No client work is fabricated.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    <a href="{{instagram}}" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+  </footer>
+
+  <script src="studio.js"></script>
+
+
+<script src="experience.js"></script><script src="motion.js"></script></body></html>
