@@ -3,7 +3,7 @@
   // Text entrance works with existing headings, without adding a framework runtime.
   if (!reduce.matches) {
     document
-      .querySelectorAll(".hero h1,.lf-intro h1,.subpage-hero h1")
+      .querySelectorAll(".hero h1,.home-hero h1,.lf-intro h1,.subpage-hero h1")
       .forEach((h) => {
         let i = 0;
         const walker = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);

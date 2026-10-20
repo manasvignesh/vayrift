@@ -22,6 +22,8 @@ src/branding.css
 src/contact.html
 src/experience.css
 src/experience.js
+src/home.css
+src/home.js
 src/index.html
 src/motion.js
 src/pages.css
