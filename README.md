@@ -36,3 +36,7 @@ See MEDIA-LICENSES.md for the media inventory and owner authorization. GITHUB-FI
 ## Interaction design
 
 The original vanilla frontend is retained. Native split-text entrances, magnetic buttons, pointer spotlights, subtle card tilt, scroll depth, work filters, a moving capability ribbon and a guided brief selector add motion without a React runtime. Reduced-motion preferences disable decorative movement; touch users retain native interactions.
+
+## Vercel
+
+Import this repository with its root directory left at the repository root. The committed vercel.json explicitly sets the build command to npm run build, output directory to dist, and framework to Other (null). It also enables clean HTML URLs. There is no public/ build folder. Redeploy the newest commit after changing build settings. The current inquiry workflow uses mailto; the optional functions/inquiry.mjs adapter is not deployed as a Vercel Function by this static configuration.

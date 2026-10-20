@@ -33,4 +33,5 @@ src/studio.js
 src/work.html
 tests/build.test.mjs
 tests/inquiry.test.mjs
+vercel.json
 GITHUB-FILES.txt
