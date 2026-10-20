@@ -12,7 +12,7 @@ scripts/dev.mjs
 scripts/serve.mjs
 src/about.html
 src/art-direction.css
-src/assets/aman-design-reference.png
+src/assets/alankarii-website.png
 src/assets/favicon.svg
 src/assets/original-courtyard.svg
 src/assets/property-poster.png

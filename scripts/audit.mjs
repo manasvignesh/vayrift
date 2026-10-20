@@ -26,7 +26,7 @@ const errors = [];
 const media = new Set([
   "src/assets/property-sample.mp4",
   "src/assets/property-poster.png",
-  "src/assets/aman-design-reference.png",
+  "src/assets/alankarii-website.png",
 ]);
 for (const f of files) {
   if (/\.(sqlite|db|zip|log|enc)$|(^|\/)(server|extension|data)\//i.test(f))

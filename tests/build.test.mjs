@@ -26,8 +26,8 @@ test("production build contains only standalone branding and safe public assets"
   assert.ok(assets.includes("property-poster.png"));
   const work = await readFile(join(root, "dist/work.html"), "utf8");
   assert.ok(work.includes("assets/property-sample.mp4"));
-  assert.ok(assets.includes("aman-design-reference.png"));
-  assert.ok(work.includes("https://www.aman.com/"));
+  assert.ok(assets.includes("alankarii-website.png"));
+  assert.ok(work.includes("https://alankarii.vercel.app/"));
   const js = await readFile(join(root, "dist/studio.js"), "utf8");
   assert.ok(!js.includes("/portfolio/api"));
   assert.ok(!js.includes("formResult.innerHTML"));
