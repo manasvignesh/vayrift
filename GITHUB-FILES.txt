@@ -11,7 +11,10 @@ scripts/build.mjs
 scripts/dev.mjs
 scripts/serve.mjs
 src/about.html
+src/alankarii.html
 src/art-direction.css
+src/assets/alankarii-detail.png
+src/assets/alankarii-mobile.png
 src/assets/alankarii-website.png
 src/assets/favicon.svg
 src/assets/original-courtyard.svg
@@ -22,6 +25,7 @@ src/branding.css
 src/contact.html
 src/experience.css
 src/experience.js
+src/finish.css
 src/home.css
 src/home.js
 src/index.html

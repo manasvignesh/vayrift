@@ -10,3 +10,5 @@ The site owner explicitly authorized use and publication of the existing media i
 There are no fabricated client endorsements, testimonials, awards or performance statistics. Service visualizations are illustrations of an offer, not extra client work.
 
 - src/assets/alankarii-website.png: screenshot of https://alankarii.vercel.app/, a website the studio owner confirmed they built and explicitly requested for the portfolio. Presented as a founder project, without unverified client or business-result claims.
+
+Alankarii mobile and detail PNGs are actual browser captures of the same founder-owned website, captured for its project presentation. No third-party agency imagery is included.

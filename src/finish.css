@@ -1,0 +1,32 @@
+/* Final presentation layer: readable metadata, keyboard focus and project storytelling. */
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #536d45;outline-offset:6px}
+.home-kicker,.home-project-meta span,.stage-header,.stage-footer>span,.home-browser-line,.home-discipline-bar span,.home-service-list summary small,.home-process li>span,.home-hero-origin{font-size:11px!important;line-height:1.5!important}
+.home-film-toggle{min-width:44px;min-height:44px}
+.home-project-image img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.home-project-image:hover img{transform:scale(1.025)}
+.home-project-image:focus-visible .home-project-hover{opacity:1;transform:none}
+.case-page{--case-ink:#252c26;--case-green:#536d45;color:var(--case-ink);max-width:1600px;margin:auto;padding:0 clamp(22px,5.55vw,96px)}
+.case-page h1,.case-page h2{font-family:Arial,Helvetica,sans-serif;letter-spacing:-.055em;line-height:1.04;font-weight:500}
+.case-page h1{font-size:clamp(48px,6.9vw,106px);margin:25px 0 40px}
+.case-page h2{font-size:clamp(34px,4vw,60px);margin:0 0 28px}
+.case-page em{font-style:normal;color:var(--case-green)}
+.case-intro{padding:45px 0 0}.case-back,.case-text-link{display:inline-block;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:6px;font-size:14px}
+.case-title-row{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:50px}
+.case-title-row .eyebrow{font-size:11px;letter-spacing:.12em}
+.case-seal{display:grid;place-content:center;text-align:center;width:145px;height:145px;border:1px solid #c5baa8;border-radius:50%;font:italic 72px Georgia,serif;color:#722d3c;transform:rotate(-12deg);flex-shrink:0}
+.case-seal small{font:10px Arial,sans-serif;letter-spacing:.16em}
+.case-meta{display:grid;grid-template-columns:1fr 1fr 1.5fr 1.3fr;gap:20px;padding:25px 0 32px;border-top:1px solid #ccd0c5;align-items:center;font-size:14px}
+.case-meta p{margin:0}.case-meta span{display:block;font-size:10px;letter-spacing:.1em;margin-bottom:8px;color:#596152}.case-meta a{text-align:right;text-decoration:none}
+.case-cover{margin:0;background:#e6e0d4;padding:clamp(16px,4vw,65px);border-radius:3px}
+.case-cover img{display:block;width:100%;height:auto}.case-browser{display:flex;justify-content:space-between;gap:10px;background:#fffaf3;color:#775e50;padding:14px 18px;font-size:10px;letter-spacing:.08em}
+.case-story{display:grid;grid-template-columns:1fr 2fr;gap:40px;padding:90px 0}.case-story .eyebrow{margin-top:7px}.case-story p:not(.eyebrow){max-width:680px;font-size:17px;line-height:1.8}.case-story p:last-child{font-size:14px;color:#626b5d}
+.case-design{display:grid;grid-template-columns:1fr 1.3fr;background:#eceee6;padding:55px;gap:60px;border-radius:3px}.case-design-heading .eyebrow{margin-bottom:30px}.case-type{background:#faf6ed;color:#722d3c;padding:35px;display:flex;flex-direction:column;justify-content:center}.case-type>span{font-size:10px;letter-spacing:.13em}.case-type>p{font:clamp(30px,3.4vw,52px)/1.12 Georgia,serif;letter-spacing:-.04em;margin:35px 0}.case-type small{font-size:11px;line-height:1.7;max-width:330px}.case-swatches{display:flex;gap:12px;margin:0 0 25px}.case-swatches span{font-size:11px;flex:1}.case-swatches span:before{content:'';display:block;height:48px;background:var(--swatch);border:1px solid #d9cebb;margin-bottom:9px}
+.case-devices{display:grid;grid-template-columns:1.3fr 1fr;gap:80px;align-items:center;padding:95px 7%;background:linear-gradient(120deg,transparent 55%,#e8e8df 55%)}
+.case-device-copy>p:not(.eyebrow),.case-device-copy li{font-size:16px;line-height:1.8}.case-device-copy ul{padding-left:20px;margin:25px 0 35px}.case-phone{max-width:320px;padding:10px;margin:0 auto;background:#242a25;border-radius:36px;box-shadow:20px 30px 50px #27312520;transform:rotate(4deg)}.case-phone img{width:100%;height:auto;display:block;border-radius:28px}
+.case-detail{margin:0}.case-detail img{display:block;width:100%;height:auto;border:1px solid #dedfd3}.case-detail figcaption{font-size:12px;margin-top:14px;color:#626b5d}.case-close{padding:85px 0;display:flex;flex-direction:column;align-items:flex-start;gap:20px}.case-close h2{margin:0}.case-close .btn{margin:8px 0}
+@media(max-width:760px){.home-hero-origin{gap:20px}.stage-header{flex-wrap:wrap;gap:8px}.stage-footer>span{max-width:130px}.home-discipline-bar span{font-size:10px!important}.home-browser-line{font-size:9px!important}.home-browser-line span:nth-child(2){max-width:220px}.home-project-meta{gap:15px}.home-project-meta>span{text-align:right;max-width:120px}.case-intro{padding-top:28px}.case-title-row{margin-top:35px;align-items:flex-start}.case-seal{width:70px;height:70px;font-size:36px;margin-top:35px}.case-seal small{font-size:6px}.case-page h1{font-size:clamp(39px,8.5vw,62px)}.case-meta{grid-template-columns:1fr 1fr;gap:25px;font-size:13px}.case-meta a{text-align:left}.case-story{grid-template-columns:1fr;gap:18px;padding:50px 0}.case-story p:not(.eyebrow){font-size:16px}.case-design{grid-template-columns:1fr;padding:25px;gap:15px}.case-type{padding:25px}.case-devices{grid-template-columns:1fr;padding:55px 0;gap:40px;background:none}.case-phone{width:240px}.case-close{padding:55px 0}.case-browser{font-size:8px;padding:10px}.case-browser span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){.home-project-image img{transition:none}.home-project-image:hover img{transform:none}}
+
+.home-origin,.home-service-number{font-size:11px!important;line-height:1.5!important}.home-hero-copy>.home-kicker{font-size:11px!important}.home-origin{flex-wrap:wrap;gap:10px 25px}.home-browser-line>span:first-child{font-size:9px!important}
+.contact-grid .form-container{background:transparent;border:0;padding:0}.contact-grid .inquiry-form{box-shadow:none}.home-origin,.home-project-meta span,.stage-footer>span{color:#506047}
+@media(max-width:760px){.home-origin{display:flex;justify-content:space-between}.home-origin>span{max-width:48%}.case-title-row{position:relative;padding-right:0}.case-title-row>div{width:100%}.case-title-row .eyebrow{max-width:230px;padding-right:12px}.case-seal{position:absolute;right:0;top:-20px}.case-page h1{font-size:clamp(39px,9.2vw,62px);letter-spacing:-.05em}}

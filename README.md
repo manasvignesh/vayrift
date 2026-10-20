@@ -40,3 +40,7 @@ The original vanilla frontend is retained. Native split-text entrances, magnetic
 ## Vercel
 
 Import this repository with its root directory left at the repository root. The committed vercel.json explicitly sets the build command to npm run build, output directory to dist, and framework to Other (null). It also enables clean HTML URLs. There is no public/ build folder. Redeploy the newest commit after changing build settings. The current inquiry workflow uses mailto; the optional functions/inquiry.mjs adapter is not deployed as a Vercel Function by this static configuration.
+
+### Portfolio presentation
+
+The Alankarii project story is at `alankarii.html`, linked from Home and Work. Its desktop, mobile and detail images are captures of the founder-owned live website. Shared presentation and accessibility adjustments live in `src/finish.css`; branding and inquiry details remain in `brand.json`. The public inquiry form still prepares an email for review and sending in the visitor’s email application; it does not provide automatic delivery.

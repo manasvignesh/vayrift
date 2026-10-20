@@ -457,14 +457,23 @@
 
   // 7. Mobile Navigation Drawer
   if (navToggle && mobileNav) {
+    let previousOverflow = '';
+    const background = [...document.body.children].filter(el => el !== mobileNav && !['SCRIPT', 'LINK'].includes(el.tagName));
+    const inertBefore = new Map();
     const toggleNav = (open) => {
       navToggle.setAttribute('aria-expanded', String(open));
       mobileNav.setAttribute('aria-hidden', String(!open));
       mobileNav.classList.toggle('active', open);
       if (open) {
+        previousOverflow = document.body.style.overflow;
         document.body.style.overflow = 'hidden';
+        background.forEach(el => { inertBefore.set(el, el.inert); el.inert = true; });
+        navClose?.focus();
       } else {
-        document.body.style.overflow = '';
+        document.body.style.overflow = previousOverflow;
+        background.forEach(el => { el.inert = inertBefore.get(el) || false; });
+        inertBefore.clear();
+        navToggle.focus();
       }
     };
 
@@ -481,7 +490,18 @@
       link.addEventListener('click', () => toggleNav(false));
     });
 
+    const wideNav = matchMedia('(min-width: 901px)');
+    wideNav.addEventListener('change', () => {
+      if (wideNav.matches && mobileNav.classList.contains('active')) toggleNav(false);
+    });
+    mobileNav.addEventListener('click', e => { if (e.target === mobileNav) toggleNav(false); });
     window.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab' && mobileNav.classList.contains('active')) {
+        const items = [...mobileNav.querySelectorAll('a[href], button:not([disabled])')];
+        const first = items[0], last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last?.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first?.focus(); }
+      }
       if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
         toggleNav(false);
       }
