@@ -1166,3 +1166,576 @@
     transform: none;
   }
 }
+
+/* Restore the bolder editorial scale and uninterrupted cinematic canvas. */
+.home-hero {
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 30px;
+}
+.home-hero-copy {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 22px 7%;
+  padding: 0;
+}
+.home-hero-copy > .home-kicker {
+  grid-column: 1/-1;
+  font-size: 9px;
+  letter-spacing: 0.11em;
+}
+.home-hero h1 {
+  grid-column: 1;
+  grid-row: 2/4;
+  font-size: clamp(65px, 7.7vw, 110px);
+  max-width: none;
+  margin: 0;
+  line-height: 0.96;
+  font-weight: 600;
+  letter-spacing: -0.07em;
+}
+.home-lead {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 18px;
+  color: #505d48;
+  line-height: 1.65;
+  max-width: 335px;
+  align-self: start;
+  padding-top: 5px;
+}
+.home-hero-actions {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+  gap: 20px;
+  align-self: end;
+}
+.home-button {
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 15px 21px;
+  background: #37593c;
+}
+.home-quiet-link {
+  font-size: 13px;
+  color: #37593c;
+}
+.home-origin {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d4dccb;
+  margin-top: 12px;
+  padding-top: 18px;
+  font-size: 8px;
+  color: #6e7c62;
+}
+.home-hero-stage {
+  margin-top: 20px;
+  padding: 0;
+  background: transparent;
+  transform: none;
+  border-radius: 0;
+}
+.home-hero-stage:hover {
+  transform: none;
+}
+.stage-header {
+  font-size: 8px;
+  padding: 0 0 14px;
+  color: #6b7c5e;
+  letter-spacing: 0.09em;
+}
+.home-film-frame {
+  height: 480px;
+  border-radius: 3px;
+}
+.home-film-frame video {
+  object-position: 50% 53%;
+}
+.home-film-open {
+  right: 25px;
+  bottom: 25px;
+  padding: 13px 19px;
+  font-size: 12px;
+  background: #17201e9c;
+}
+.home-film-toggle {
+  left: 25px;
+  bottom: 25px;
+  width: 37px;
+  height: 37px;
+}
+.stage-footer {
+  margin-top: 17px;
+}
+.stage-footer p {
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  color: #273526;
+}
+.stage-footer p br {
+  display: none;
+}
+.stage-footer p em {
+  font-style: normal;
+  color: #546f43;
+}
+.stage-footer > span {
+  font-size: 7px;
+  color: #6d7e61;
+  letter-spacing: 0.08em;
+}
+.home-discipline-bar {
+  background: #edf1e7;
+  margin-top: 0;
+}
+.home-discipline-bar > .home-container {
+  padding: 18px 0;
+}
+.home-discipline-bar span {
+  font-size: 9px;
+  color: #5b704d;
+}
+.home-discipline-bar a {
+  font-size: 11px;
+  color: #37593c;
+}
+.home-page h2 {
+  font-weight: 500;
+  font-size: clamp(37px, 4vw, 57px);
+}
+.home-section-head {
+  margin-bottom: 33px;
+}
+.home-kicker {
+  font-size: 10px;
+  color: #687a59;
+}
+.home-work {
+  padding-top: 58px;
+  padding-bottom: 60px;
+}
+.home-project-grid {
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+}
+.home-project-digital .home-project-image img {
+  height: auto;
+  aspect-ratio: 1.44;
+  object-fit: contain;
+}
+.home-project-motion {
+  padding-top: 100px;
+}
+.home-motion-image img {
+  height: 330px;
+}
+.home-browser-line {
+  font-size: 7px;
+  padding: 12px 14px;
+  color: #6e805f;
+}
+.home-project-meta span {
+  font-size: 8px;
+  color: #71835f;
+}
+.home-project-meta h3 {
+  font-size: 32px;
+}
+.home-project > p {
+  font-size: 15px;
+  color: #5e6d52;
+  line-height: 1.8;
+}
+.home-project-hover {
+  font-size: 12px;
+}
+.home-offer-intro > p:not(.home-kicker) {
+  font-size: 16px;
+  color: #5b6a4f;
+  line-height: 1.8;
+}
+.home-offer-grid {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  gap: 9%;
+}
+.home-service-list summary small {
+  font-size: 10px;
+  color: #6d805c;
+  letter-spacing: 0.035em;
+}
+.home-service-list h3 {
+  font-size: 28px;
+  color: #263323;
+}
+.home-service-list details {
+  padding: 25px 0;
+  border-color: #c3cfb5;
+}
+.home-service-body p {
+  font-size: 15px;
+  color: #5e6e50;
+  line-height: 1.8;
+}
+.home-service-body > a {
+  font-size: 12px;
+}
+.home-studio-note > p {
+  font-size: 12px;
+  color: #6c7d5c;
+}
+.home-note-symbol {
+  color: #829d69;
+}
+.home-studio {
+  padding: 58px 0;
+}
+.home-studio > div > p:not(.home-kicker) {
+  font-size: 16px;
+  color: #5c6b51;
+}
+.home-process b {
+  font-size: 23px;
+  color: #2d3d27;
+}
+.home-process p {
+  font-size: 14px;
+  color: #6c7e5b;
+}
+.home-process li > span {
+  font-size: 10px;
+  color: #778b65;
+}
+.home-contact {
+  background: #e3eacf;
+}
+.home-contact > .home-container {
+  padding: 58px 0;
+}
+.home-contact h2 {
+  font-size: clamp(49px, 5.6vw, 79px);
+}
+.home-contact-email {
+  font-size: 19px;
+}
+.home-contact-arrow {
+  width: 72px;
+  height: 72px;
+  font-size: 39px;
+}
+.home-contact-actions > span {
+  font-size: 12px;
+  color: #61794b;
+}
+.home-origin > span {
+  display: inline;
+}
+.home-film-frame:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(transparent 65%, #17201e35);
+}
+.home-film-toggle,
+.home-film-open {
+  z-index: 1;
+}
+@media (max-width: 1100px) {
+  .home-hero-copy {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px 5%;
+  }
+  .home-hero h1 {
+    font-size: clamp(60px, 7.8vw, 88px);
+  }
+  .home-lead {
+    font-size: 16px;
+  }
+  .home-hero-actions {
+    gap: 15px;
+  }
+  .home-film-frame {
+    height: 440px;
+  }
+  .home-motion-image img {
+    height: 275px;
+  }
+  .home-project-motion {
+    padding-top: 90px;
+  }
+  .home-service-list h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .home-hero {
+    padding-top: 34px;
+  }
+  .home-hero-copy {
+    gap: 20px 5%;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .home-hero h1 {
+    font-size: 58px;
+  }
+  .home-lead {
+    font-size: 14px;
+  }
+  .home-hero-actions {
+    display: block;
+  }
+  .home-hero-actions .home-quiet-link {
+    margin-top: 14px;
+    font-size: 11px;
+  }
+  .home-button {
+    font-size: 11px;
+    padding: 13px 17px;
+  }
+  .home-film-frame {
+    height: 380px;
+  }
+  .stage-footer p {
+    font-size: 23px;
+  }
+  .home-page h2 {
+    font-size: 38px;
+  }
+  .home-project-motion {
+    padding-top: 70px;
+  }
+  .home-motion-image img {
+    height: 230px;
+  }
+  .home-project > p {
+    font-size: 13px;
+  }
+  .home-project-meta h3 {
+    font-size: 28px;
+  }
+  .home-service-list h3 {
+    font-size: 23px;
+  }
+  .home-offer-intro > p:not(.home-kicker),
+  .home-studio > div > p:not(.home-kicker) {
+    font-size: 14px;
+  }
+  .home-service-body p {
+    font-size: 13px;
+  }
+  .home-contact h2 {
+    font-size: 53px;
+  }
+  .home-contact-email {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .home-hero {
+    padding-top: 29px;
+    padding-bottom: 24px;
+  }
+  .home-hero-copy {
+    display: block;
+  }
+  .home-hero-copy > .home-kicker {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+  .home-hero h1 {
+    font-size: clamp(43px, 11.6vw, 68px);
+    line-height: 0.98;
+    margin: 24px 0 22px;
+  }
+  .home-lead {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 345px;
+    padding: 0;
+  }
+  .home-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 25px;
+  }
+  .home-hero-actions .home-quiet-link {
+    margin: 0;
+    font-size: 11px;
+  }
+  .home-button {
+    font-size: 12px;
+    padding: 14px 18px;
+  }
+  .home-origin {
+    display: flex;
+    gap: 20px;
+    font-size: 6px;
+    margin-top: 27px;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+  .home-hero-stage {
+    margin-top: 23px;
+    padding: 0;
+    transform: none;
+  }
+  .stage-header {
+    font-size: 5.5px;
+    gap: 10px;
+    letter-spacing: 0.03em;
+    padding-bottom: 11px;
+  }
+  .home-film-frame {
+    height: 350px;
+    border-radius: 4px;
+  }
+  .home-film-frame video {
+    object-position: 55% center;
+  }
+  .home-film-open {
+    font-size: 10px;
+    right: 17px;
+    bottom: 17px;
+    padding: 10px 14px;
+  }
+  .home-film-toggle {
+    left: 17px;
+    bottom: 17px;
+    width: 32px;
+    height: 32px;
+  }
+  .stage-footer {
+    margin-top: 15px;
+    align-items: start;
+    padding: 0;
+    gap: 15px;
+  }
+  .stage-footer p {
+    font-size: 22px;
+    line-height: 1.1;
+    max-width: 230px;
+  }
+  .stage-footer p br {
+    display: block;
+  }
+  .stage-footer > span {
+    font-size: 5px;
+    max-width: 91px;
+  }
+  .home-discipline-bar > .home-container {
+    padding: 15px 0;
+  }
+  .home-discipline-bar span {
+    font-size: 6px;
+    letter-spacing: 0.04em;
+  }
+  .home-discipline-bar i {
+    font-size: 15px;
+  }
+  .home-work {
+    padding: 38px 0 40px;
+  }
+  .home-page h2 {
+    font-size: 35px;
+  }
+  .home-kicker {
+    font-size: 8px;
+  }
+  .home-section-head {
+    margin-bottom: 25px;
+  }
+  .home-project-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .home-project-motion {
+    padding-top: 0;
+  }
+  .home-browser-line {
+    font-size: 5px;
+    padding: 10px 12px;
+  }
+  .home-project-digital .home-project-image img {
+    height: auto;
+    aspect-ratio: 1.44;
+  }
+  .home-motion-image img {
+    height: 275px;
+  }
+  .home-project-meta span {
+    font-size: 7px;
+  }
+  .home-project-meta h3 {
+    font-size: 30px;
+  }
+  .home-project > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .home-project-hover {
+    font-size: 11px;
+  }
+  .home-offer-grid {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    gap: 28px;
+  }
+  .home-offer-intro > p:not(.home-kicker) {
+    font-size: 15px;
+  }
+  .home-service-list summary small {
+    font-size: 8px;
+  }
+  .home-service-list h3 {
+    font-size: 25px;
+  }
+  .home-service-list details {
+    padding: 24px 0;
+  }
+  .home-service-body p {
+    font-size: 14px;
+  }
+  .home-service-body > a {
+    font-size: 12px;
+  }
+  .home-studio {
+    padding: 39px 0;
+    gap: 28px;
+  }
+  .home-studio > div > p:not(.home-kicker) {
+    font-size: 15px;
+  }
+  .home-process b {
+    font-size: 22px;
+  }
+  .home-process p {
+    font-size: 13px;
+  }
+  .home-process li > span {
+    font-size: 9px;
+  }
+  .home-contact > .home-container {
+    padding: 38px 0;
+  }
+  .home-contact h2 {
+    font-size: 49px;
+  }
+  .home-contact-email {
+    font-size: 16px;
+  }
+  .home-contact-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 29px;
+  }
+  .home-contact-actions > span {
+    font-size: 11px;
+  }
+}
