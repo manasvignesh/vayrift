@@ -32,9 +32,12 @@ export function pricingContent(p, b, date) {
       money(x.amount) +
       "<small>" +
       suffix +
-      "</small></p><p>" +
-      e(x.scope || x.terms) +
-      "</p>" +
+      ' </small></p><ul class="offer-features">' +
+      (x.scope || x.terms)
+        .split(/; |\. (?=[A-Z0-9])/)
+        .map((s) => "<li>" + e(s) + "</li>")
+        .join("") +
+      "</ul>" +
       extra +
       link(x.id) +
       "</article>";
@@ -80,7 +83,7 @@ export function pricingContent(p, b, date) {
       : '<aside class="draft-pricing" role="note">DRAFT PRICING, NOT YET APPROVED</aside>') +
     '<header class="lf-intro pricing-intro"><p class="eyebrow">PLANS &amp; PRICING / HYDERABAD</p><h1>A clear scope.<br><em>A considered start.</em></h1><p>Short reels from your photos, and websites that make the next step easy. Start small, see the direction, then choose what comes next.</p><p class="pricing-freshness">Prices last updated: ' +
     e(date) +
-    "</p></header>" +
+    '</p><aside class="pricing-hero-note" aria-label="A simple way to start"><span class="eyebrow">SMALL START. CLEAR NEXT STEP.</span><div class="hero-offer-line"><span>01</span><strong>Your photos.</strong><i aria-hidden="true">↗</i></div><div class="hero-offer-line"><span>02</span><strong>Our edit.</strong><i aria-hidden="true">↗</i></div><div class="hero-offer-line"><span>03</span><strong>Your next chapter.</strong><i aria-hidden="true">↗</i></div><p>A two-founder studio.<br>A written scope before we start.</p></aside></header><nav class="pricing-jumps" aria-label="Pricing sections"><a href="#starting">Start small</a><a href="#monthly">Monthly plans</a><a href="#websites">Websites</a><a href="#addons">Add-ons</a><a href="#pricing-details">The details</a></nav>' +
     '<section class="pricing-section" aria-labelledby="starting"><p class="eyebrow">01 / YOUR STARTING POINT</p><h2 id="starting">One step at a time.</h2><ol class="offer-ladder"><li><h3>Start with a Pilot reel</h3><p>' +
     money(p.pilot.amount) +
     " · first order only</p><p>" +
@@ -157,7 +160,7 @@ export function pricingContent(p, b, date) {
       )
       .join("") +
     "</tbody></table></div></section>" +
-    '<section class="pricing-section exclusions"><p class="eyebrow">SCOPE BOUNDARIES</p><h2>What is not included.</h2><ul>' +
+    '<section class="pricing-section exclusions" id="pricing-details"><p class="eyebrow">SCOPE BOUNDARIES</p><h2>What is not included.</h2><ul>' +
     p.excluded.map((s) => "<li>" + e(s) + "</li>").join("") +
     "</ul><p>Reels use photos the client supplies and is allowed to use. Websites need client-supplied approved text, logo and photos. No sales, views, search rankings or booking outcomes are promised.</p><p>" +
     e(b.pricing_note) +

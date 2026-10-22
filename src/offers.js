@@ -4,10 +4,14 @@
     rows = [...document.querySelectorAll("[data-sector]")],
     result = document.querySelector("#sector-result");
   if (select) {
+    select.value = "listing-pack";
     const update = () => {
       rows.forEach(
         (row) =>
-          (row.hidden = !!select.value && row.dataset.sector !== select.value),
+          (row.hidden =
+            !!select.value &&
+            row.querySelector("strong").textContent.replace(/:$/, "") !==
+              select.selectedOptions[0].textContent),
       );
       if (result)
         result.textContent = select.value
