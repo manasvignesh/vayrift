@@ -66,3 +66,7 @@ Pricing is **draft** (`approved: false`). The pricing page displays a visible wa
 - Confirm GST treatment and edit pricing_note if needed. Define the written quotation and permission-to-use-assets process.
 - Approve pricing and deliberately enable indexable only when ready. inquiry_enabled must remain false until a separately configured and verified delivery adapter exists.
 - Run `npm test`, `npm run build`, `npm run audit`. Deploy only after review; this implementation does not push or deploy.
+
+## Shared visual and interaction finish
+
+`src/polish.css` and `src/polish.js` provide the shared typography, sticky-header feedback, native page transitions where supported, one-time content entrances, disclosure animations and form-field feedback. Unsupported browsers retain ordinary navigation. Reduced-motion preferences disable the decorative transitions. Service tabs, menus, inquiry preparation and project previews retain their existing vanilla implementations. `src/home-premium.css` provides the website-led homepage composition; all project imagery remains owner-authorized and honestly labelled. The UI pass adds no dependencies, new media, provider requests or automatic sending.

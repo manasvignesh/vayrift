@@ -186,7 +186,7 @@
       if (fields && fields.disabled) return;
 
       // Clean errors
-      ['err-name', 'err-email', 'err-message'].forEach((id) => {
+      ['err-name', 'err-email', 'err-message', 'err-consent'].forEach((id) => {
         const el = document.getElementById(id);
         if (el) el.textContent = '';
       });
@@ -221,7 +221,9 @@
         hasError = true;
       }
       if (!consent) {
-        alert('Please check the box to confirm consent to receive a reply.');
+        const error = document.getElementById('err-consent');
+        if (error) error.textContent = 'Please confirm that you would like a reply to this inquiry.';
+        document.getElementById('inq-consent')?.focus();
         hasError = true;
       }
 
