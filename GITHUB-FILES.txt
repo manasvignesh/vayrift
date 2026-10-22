@@ -8,6 +8,7 @@ package-lock.json
 package.json
 scripts/audit.mjs
 scripts/build.mjs
+scripts/content.mjs
 scripts/dev.mjs
 scripts/serve.mjs
 src/about.html
@@ -30,9 +31,14 @@ src/home.css
 src/home.js
 src/index.html
 src/motion.js
+src/offers.css
+src/offers.js
 src/pages.css
+src/pricing.html
+src/pricing.json
 src/refinement.css
 src/robots.txt
+src/samples.json
 src/services.html
 src/studio.css
 src/studio.js

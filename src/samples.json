@@ -1,0 +1,42 @@
+[
+  {
+    "sector": "Hotels and homestays",
+    "reels": [
+      {
+        "title": "A closer look at the stay",
+        "label": "SUPPLIED AI-GENERATED DEMONSTRATION / NOT CLIENT WORK",
+        "src": "assets/property-sample.mp4",
+        "poster": "assets/property-poster.png",
+        "description": "Existing 10-second, 1280 × 720 property-video demonstration. It does not establish a real client relationship, property endorsement or performance result."
+      }
+    ]
+  },
+  {
+    "sector": "Real estate",
+    "reels": []
+  },
+  {
+    "sector": "Cafes and restaurants",
+    "reels": []
+  },
+  {
+    "sector": "Salons and gyms",
+    "reels": []
+  },
+  {
+    "sector": "Retail",
+    "reels": []
+  },
+  {
+    "sector": "Architects and interior designers",
+    "reels": []
+  },
+  {
+    "sector": "Startups",
+    "reels": []
+  },
+  {
+    "sector": "Education",
+    "reels": []
+  }
+]

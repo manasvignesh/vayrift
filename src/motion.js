@@ -149,7 +149,7 @@
   document.querySelectorAll("[data-brief]").forEach((button) =>
     button.addEventListener("click", () => {
       const field = document.getElementById("inq-service");
-      if (field) field.value = button.dataset.brief;
+      if (field) { field.value = button.dataset.brief; field.dispatchEvent(new Event("change")); }
       document.querySelectorAll("[data-brief]").forEach((b) => {
         const selected = b === button;
         b.classList.toggle("active", selected);
@@ -169,8 +169,7 @@
   const sync = () =>
     document.querySelectorAll(".lf-service video").forEach((v) => {
       const visible = !v.closest(".lf-service").hidden;
-      if (visible && !reduce.matches) v.play().catch(() => {});
-      else v.pause();
+      if (!visible || reduce.matches) v.pause();
     });
   document
     .querySelectorAll("[data-service-tab]")

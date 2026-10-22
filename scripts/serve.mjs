@@ -20,6 +20,8 @@ const types = {
   ".png": "image/png",
   ".mp4": "video/mp4",
   ".txt": "text/plain",
+  ".xml": "application/xml",
+  ".vtt": "text/vtt",
 };
 const server = createServer(async (req, res) => {
   try {

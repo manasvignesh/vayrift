@@ -5,11 +5,15 @@
   "tagline": "Ideas in motion.",
   "location": "Hyderabad, India",
   "instagram": "https://instagram.com/vayrift",
-  "future_domain": "vayrift.com",
+  "future_domain": "",
   "production_url": "",
   "contact_email": "vayrift11@gmail.com",
   "inquiry_enabled": false,
   "inquiry_endpoint": "/api/inquiry",
   "turnstile_site_key": "",
-  "founders": []
+  "founders": [],
+  "indexable": false,
+  "whatsapp_number": "",
+  "phone": "",
+  "pricing_note": "Prices are in Indian rupees. GST, where applicable, is confirmed in your written quotation."
 }

@@ -44,3 +44,25 @@ Import this repository with its root directory left at the repository root. The 
 ### Portfolio presentation
 
 The Alankarii project story is at `alankarii.html`, linked from Home and Work. Its desktop, mobile and detail images are captures of the founder-owned live website. Shared presentation and accessibility adjustments live in `src/finish.css`; branding and inquiry details remain in `brand.json`. The public inquiry form still prepares an email for review and sending in the visitor’s email application; it does not provide automatic delivery.
+
+## Fixed offers, pricing and launch gates
+
+`src/pricing.json` is the single source for every offer amount, three-month price, scope and exclusions. `scripts/content.mjs` renders `src/pricing.html`, contact service options and entry-price tokens during the build. Change an amount there once; do not type prices into page templates. Every page links to Plans & Pricing. `src/offers.css` and `src/offers.js` add the sector quick-pick and optional contact UI using the existing visual language. There are no new dependencies.
+
+Pricing is **draft** (`approved: false`). The pricing page displays a visible warning. All pages stay noindex and robots stays Disallow unless ALL three conditions hold: `src/pricing.json` approved is true, `brand.json` indexable is true, and production_url contains the verified HTTPS production URL. Only then are canonical/Open Graph tags, LocalBusiness JSON-LD and sitemap.xml generated. Switching any gate off removes the generated sitemap. Never set a guessed domain. The default remains unindexable.
+
+`brand.json` has optional whatsapp_number (international digits, country code included), phone, founders and configurable pricing_note. Unknown values remain empty. Empty phone, WhatsApp and founder names render no elements. The public Gmail address remains the supplied address; a domain mailbox has not been invented. inquiry_enabled remains false, so the form prepares a mailto draft for the visitor to review and send. It does not transmit or store the inquiry. WhatsApp opens a prefilled draft for the selected service only when configured; clicking does not send it automatically.
+
+`src/samples.json` groups up to three labelled reels per sector. Blank groups and entries render nothing. Use local asset paths with a real poster and honest label, and add each new asset to MEDIA-LICENSES.md before use. Optional captions must be an accurate local WebVTT file. The only reel currently shown is the existing 10-second AI-generated demonstration, not a client commission. Alankarii remains labelled as a founder-built website.
+
+### Assumptions and founder launch checklist
+
+- Growth includes Starter; Pro includes Growth, with six reels and eight posts as Pro totals. No popularity or results claims are made.
+- The 48-hour preview/turnaround starts after receiving the agreed brief and cleared assets. The written quote confirms scheduling and the definition of a small website edit.
+- Confirm all draft prices, fixed scopes, Pilot advance/refund terms, revision rules, and three-month cancellation/unused-period terms before approving pricing.
+- Supply the real WhatsApp number (with country code) and optional public phone. Supply founder names only if you want them public.
+- Supply/verify the actual production URL; optionally arrange a domain email. Keep unknown values empty.
+- Supply authorized additional sector samples, posters and accurate captions if wanted; update MEDIA-LICENSES.md. Do not fill sectors with invented work.
+- Confirm GST treatment and edit pricing_note if needed. Define the written quotation and permission-to-use-assets process.
+- Approve pricing and deliberately enable indexable only when ready. inquiry_enabled must remain false until a separately configured and verified delivery adapter exists.
+- Run `npm test`, `npm run build`, `npm run audit`. Deploy only after review; this implementation does not push or deploy.
