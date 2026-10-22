@@ -74,3 +74,11 @@ Pricing is **draft** (`approved: false`). The pricing page displays a visible wa
 ## Click-to-load live project previews
 
 Homepage, Services, Work and the Alankarii case study can open the real founder-built website in a keyboard-accessible dialog. `src/live-preview.js` creates the iframe only after a visitor clicks a live-preview link, with desktop/mobile viewport controls, Escape/Close and a permanent external new-tab link. Closing removes the iframe and restores focus. There is no background live-site request from initial screenshots. Native links still work without JavaScript. The iframe is restricted to the fixed `https://alankarii.vercel.app/` URL; local CSP permits that exact frame origin. The remote site can change its embedding policy later; the new-tab link is the fallback. Browser security limits features within sandboxed frames. No purchase or inquiry is automatically submitted by the portfolio.
+
+## About page and founder profiles
+
+`src/about.html`, `src/about.css` and `src/about.js` implement the seven-section studio introduction with an original CSS paper collage, story, founders, actual service scopes, beliefs and contact/portfolio links. `scripts/about-content.mjs` renders escaped founder data from `brand.json`. Supplied founder names and LinkedIn URLs are configured there. Manas’s biography is limited to the background supplied by the owner; Siddharth’s stays at the co-founder level. No employment titles, qualifications or achievements are inferred.
+
+Both portrait fields are empty and portrait_confirmed is false. The page uses clearly labelled MV/SL placeholders, not synthetic portraits. Before adding a photograph, confirm who it depicts and permission to use it, optimize the image locally, add it to MEDIA-LICENSES.md and the audit media allowlist, then configure its local assets/ path and portrait_confirmed. No unconfirmed photo is fetched or rendered. The exact founding anecdotes/dates and Siddharth’s detailed background still require owner confirmation; current story copy describes the studio’s purpose without inventing a chronology.
+
+Local About verification artifacts are in ignored `qa/about/`: desktop/tablet/mobile screenshots and results.json. Pricing is checked against a pre-change SHA-256. No push or deployment is part of this update.

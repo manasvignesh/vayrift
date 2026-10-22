@@ -1,3 +1,4 @@
+import {renderFounders} from './about-content.mjs';
 import {
   escape as htmlEscape,
   money,
@@ -55,6 +56,7 @@ export async function build({
     )
       throw Error("Invalid public phone");
   }
+  const founderContent = await renderFounders(root, brand.founders);
   const tokens = {
     ...brand,
     pilot_price: money(pricing.pilot.amount),
@@ -116,6 +118,7 @@ export async function build({
       ? ""
       : await readFile(src, "utf8");
     text = text
+      .replace("{{founders_content}}", founderContent)
       .replace("{{pricing_content}}", pricingContent(pricing, brand, buildDate))
       .replace("{{sample_reels}}", samples.html)
       .replace(

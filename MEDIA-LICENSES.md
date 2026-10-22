@@ -20,3 +20,7 @@ No new media was added or recompressed. `src/samples.json` references only the e
 ## Live founder-project preview
 
 The existing Alankarii screenshots now link to a user-initiated live iframe of the same owner-authorized founder site. No remote media has been copied into this repository. The external site and its evolving content remain separately hosted; its live preview is clearly identified as a founder project.
+
+## About page — 22 October 2026
+
+The paper collage and founder initials are original CSS and typographic compositions. No founder photo or synthetic portrait has been added. MV and SL are explicitly labelled portrait placeholders. A real photograph may be used only after its identity and authorization are confirmed; portrait_confirmed is false for both profiles. Any later image must be recorded here and reviewed by the asset audit.
