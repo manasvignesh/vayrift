@@ -24,3 +24,7 @@ The existing Alankarii screenshots now link to a user-initiated live iframe of t
 ## About page — 22 October 2026
 
 The paper collage and founder initials are original CSS and typographic compositions. No founder photo or synthetic portrait has been added. MV and SL are explicitly labelled portrait placeholders. A real photograph may be used only after its identity and authorization are confirmed; portrait_confirmed is false for both profiles. Any later image must be recorded here and reviewed by the asset audit.
+
+## Confirmed Manas portrait — 22 October 2026
+
+- `src/assets/manas-vignesh.webp`: optimized encoding of the actual user-supplied black-shirt photograph. The user confirmed that it depicts Manas Vignesh and supplied it for the About page. No synthetic portrait, facial alteration, background replacement or generative processing was used. The source image is retained by the user; display cropping is CSS only. Siddharth’s profile remains a clearly labelled initials placeholder until his photograph is supplied and identified.

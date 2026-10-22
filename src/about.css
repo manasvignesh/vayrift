@@ -15,3 +15,6 @@
 /* Keep About footer navigation as deliberately spaced links. */
 .about-route footer .footer-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px 18px}
 @media(max-width:700px){.about-route footer .footer-links{justify-content:flex-start}}
+
+/* User-confirmed Manas portrait: keep the face and folded arms in the shared card frame. */
+.about-founder-card[aria-label="Manas Vignesh"] .about-founder-portrait>img{object-position:50% 100%}

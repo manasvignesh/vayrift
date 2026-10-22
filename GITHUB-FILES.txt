@@ -21,6 +21,7 @@ src/assets/alankarii-detail.png
 src/assets/alankarii-mobile.png
 src/assets/alankarii-website.png
 src/assets/favicon.svg
+src/assets/manas-vignesh.webp
 src/assets/original-courtyard.svg
 src/assets/property-poster.png
 src/assets/property-sample.mp4
