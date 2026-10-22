@@ -26,6 +26,7 @@ const errors = [];
 const media = new Set([
   "src/assets/property-sample.mp4",
   "src/assets/manas-vignesh.webp",
+  "src/assets/siddharth-lagisetty.webp",
   "src/assets/property-poster.png",
   "src/assets/alankarii-website.png",
   "src/assets/alankarii-mobile.png",

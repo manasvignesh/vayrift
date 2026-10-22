@@ -28,3 +28,7 @@ The paper collage and founder initials are original CSS and typographic composit
 ## Confirmed Manas portrait — 22 October 2026
 
 - `src/assets/manas-vignesh.webp`: optimized encoding of the actual user-supplied black-shirt photograph. The user confirmed that it depicts Manas Vignesh and supplied it for the About page. No synthetic portrait, facial alteration, background replacement or generative processing was used. The source image is retained by the user; display cropping is CSS only. Siddharth’s profile remains a clearly labelled initials placeholder until his photograph is supplied and identified.
+
+## Supplied Siddharth portrait — 22 October 2026
+
+- `src/assets/siddharth-lagisetty.webp`: optimized encoding of the actual photograph supplied in response to the request for Siddharth’s photo (original filename 1774969053354.jpeg). No synthetic portrait or facial alteration was used. The original photograph remains with the user. Both founder profiles now use user-supplied photographs.

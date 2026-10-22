@@ -84,3 +84,5 @@ Portrait rendering is controlled by each founder’s local portrait path and por
 Local About verification artifacts are in ignored `qa/about/`: desktop/tablet/mobile screenshots and results.json. Pricing is checked against a pre-change SHA-256. No push or deployment is part of this update.
 
 Manas’s black-shirt photograph was identified by the owner on 22 October 2026 and is configured as `assets/manas-vignesh.webp`. The optimized local asset is recorded in the media register. Siddharth’s photo remains unconfirmed and his card retains its labelled initials placeholder.
+
+Siddharth’s photograph was subsequently supplied and is configured as `assets/siddharth-lagisetty.webp`. Both founder photos are now configured; their detailed biography restrictions remain unchanged. The close-up headshot is contained within the shared card frame so it is not cropped through the face.

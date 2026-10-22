@@ -26,6 +26,7 @@ src/assets/original-courtyard.svg
 src/assets/property-poster.png
 src/assets/property-sample.mp4
 src/assets/share-card.svg
+src/assets/siddharth-lagisetty.webp
 src/branding.css
 src/contact.html
 src/experience.css
