@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Start a Project — {{agency_name}}</title>
-  <meta name="description" content="Inquire about cinematic property films, hospitality website development, or brand packages with {{agency_name}} in Hyderabad.">
+  <meta name="description" content="Reels from {{pilot_price}} using your supplied photos, defined-scope websites and creative plans from {{agency_name}} in Hyderabad. See pricing and scopes.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="studio.css"><link rel="stylesheet" href="art-direction.css">
@@ -20,7 +20,7 @@
     <nav class="desktop-nav" aria-label="Main Navigation">
       <a href="index.html">Home</a>
       <a href="work.html">Work</a>
-      <a href="services.html">Services &amp; Pricing</a>
+      <a href="services.html">Services</a><a href="pricing.html">Pricing</a>
       <a href="about.html">About</a>
       <a href="contact.html" class="nav-contact active" aria-current="page">Start a Project <span aria-hidden="true">→</span></a>
     </nav>
@@ -40,7 +40,7 @@
       <div class="mobile-nav-links">
         <a href="index.html" class="mobile-link">Home</a>
         <a href="work.html" class="mobile-link">Work &amp; Case Studies</a>
-        <a href="services.html" class="mobile-link">Services &amp; Pricing</a>
+        <a href="services.html" class="mobile-link">Services</a><a href="pricing.html" class="mobile-link">Pricing</a>
         <a href="about.html" class="mobile-link">About the Studio</a>
         <a href="contact.html" class="mobile-link active mobile-contact-cta" aria-current="page">Start a Project →</a>
       </div>
@@ -67,7 +67,7 @@
 
     <!-- SECTION: CONTACT & INQUIRY FORM -->
     <section id="inquiry" class="contact-section" aria-labelledby="contact-heading">
-      <div class="brief-guide"><p class="eyebrow">LET’S FIND YOUR STARTING POINT</p><div><button data-brief="property-film"><span>01</span><strong>A film for my property</strong><b>↗</b></button><button data-brief="website-foundation"><span>02</span><strong>A new home online</strong><b>↗</b></button><button data-brief="brand-launch"><span>03</span><strong>A fresh brand direction</strong><b>↗</b></button></div><p class="brief-feedback" aria-live="polite">Choose a direction to prefill your brief. The form prepares an email for you to review and send; it does not send automatically.</p></div><div class="contact-grid">
+      <div class="brief-guide"><p class="eyebrow">LET’S FIND YOUR STARTING POINT</p><div><button data-brief="pilot-reel"><span>01</span><strong>A film for my property</strong><b>↗</b></button><button data-brief="launch-page"><span>02</span><strong>A new home online</strong><b>↗</b></button><button data-brief="starter-identity"><span>03</span><strong>A fresh brand direction</strong><b>↗</b></button></div><p class="brief-feedback" aria-live="polite">Choose a direction to prefill your brief. The form prepares an email for you to review and send; it does not send automatically.</p></div><div class="contact-grid">
         <!-- Form Column -->
         <div class="form-container">
           <h2 id="contact-heading" class="sr-only">Project Inquiry Form</h2>
@@ -100,19 +100,13 @@
               </div>
 
               <label for="inq-service">Interested service / package
-                <select id="inq-service" name="service" required="">
-                  <option value="property-film">Property Film Starter</option>
-                  <option value="website-foundation">Website Foundation</option>
-                  <option value="brand-launch">Brand &amp; Launch</option>
-                  <option value="custom">Custom Production Scope</option>
-                  <option value="general">General Creative Inquiry</option>
-                </select>
+                <select id="inq-service" name="service" required>{{service_options}}</select>
               </label>
 
               <div class="form-row">
                 <label for="inq-budget">Estimated budget range (optional)
                   <select id="inq-budget" name="budget">
-                    <option value="">Select range...</option>
+                    <option value="">Select range...</option><option value="under-10k">Under Rs 10,000</option><option value="10k-25k">Rs 10,000 - 25,000</option><option value="25k-50k">Rs 25,000 - 50,000</option>
                     <option value="under-50k">Under ₹50,000 (&lt; $600 USD)</option>
                     <option value="50k-150k">₹50,000 – ₹1,50,000 ($600 – $1,800 USD)</option>
                     <option value="150k-300k">₹1,50,000 – ₹3,00,000 ($1,800 – $3,600 USD)</option>
@@ -163,9 +157,9 @@
             <span class="eyebrow">DIRECT CONTACT</span>
             <h3>{{agency_name}}</h3>
             <p class="sidebar-text">
-              An independent creative studio based in Hyderabad, India, serving property owners and hospitality operators globally.
+              An independent creative studio based in Hyderabad, India, working with local businesses on photo-based reels, websites and visual identity.
             </p>
-            <div class="contact-links">
+            <div class="contact-links"><!-- OPTIONAL_CONTACT -->
               <a id="contact-email" class="text-link" href="mailto:{{contact_email}}">{{contact_email}}</a>
             <a href="{{instagram}}" target="_blank" rel="noopener noreferrer">@vayrift on Instagram ↗</a></div>
           </div>
@@ -178,7 +172,7 @@
                 <strong>Creative Assessment:</strong> We will review your photos or existing website and recommend the best format.
               </li>
               <li>
-                <strong>Zero Obligation:</strong> No high-pressure sales calls. We provide transparent pricing and clear timelines upfront.
+                <strong>Zero Obligation:</strong> Clear scope and pricing up front. If our team has called you and you would rather not hear from us again, tell us and we will stop.
               </li>
             </ul>
           </div>
@@ -211,7 +205,7 @@
     <div class="footer-links">
       <a href="index.html">Home</a>
       <a href="work.html">Work</a>
-      <a href="services.html">Services &amp; Pricing</a>
+      <a href="services.html">Services</a><a href="pricing.html">Pricing</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="#top" class="back-to-top">Back to top ↑</a>

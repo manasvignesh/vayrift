@@ -129,17 +129,18 @@
       return;
     }
     const mapping = {
-      'property-film': 'property-film',
-      'website-foundation': 'website-foundation',
-      'brand-launch': 'brand-launch',
+      'property-film': 'custom',
+      'website-foundation': 'custom',
+      'brand-launch': 'custom',
     };
     const targetValue = mapping[packageId] || packageId || 'general';
-    serviceSelect.value = targetValue;
+    serviceSelect.value = [...serviceSelect.options].some(o=>o.value===targetValue) ? targetValue : 'general';
+    serviceSelect.dispatchEvent(new Event('change'));
 
     // Scroll to inquiry section
     const targetSection = document.getElementById('inquiry') || document.getElementById('contact-section');
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+      targetSection.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
     // Accessible focus to name field
