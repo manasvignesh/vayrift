@@ -1,0 +1,128 @@
+{
+  "approved": false,
+  "currency": "INR",
+  "pilot": {
+    "id": "pilot-reel",
+    "name": "Pilot reel",
+    "amount": 1499,
+    "terms": "First order only. One 15-second reel from up to 8 supplied photos. 1 concept, 1 revision. 50% advance; preview within 48 hours of receiving the agreed brief and cleared assets. If you do not approve it after the revision, the advance is refunded."
+  },
+  "monthly": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "amount": 5499,
+      "quarterly": 14849,
+      "scope": "4 × 15-second reels, up to 8 photos each; 1 revision each."
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "amount": 6999,
+      "quarterly": 18899,
+      "scope": "Everything in Starter, plus 4 static posts; 1 revision each."
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "amount": 9999,
+      "quarterly": 26999,
+      "scope": "Everything in Growth, expanded to 6 reels (one may be 30 seconds) and 8 static posts in total; 1 revision each. 48-hour turnaround from an agreed brief and cleared assets."
+    }
+  ],
+  "websites": [
+    {
+      "id": "launch-page",
+      "name": "Launch Page",
+      "amount": 9999,
+      "scope": "1 page, up to 6 sections. Mobile-friendly, with call / WhatsApp / enquiry form pathways and a map."
+    },
+    {
+      "id": "business-site",
+      "name": "Business Site",
+      "amount": 19999,
+      "scope": "3 to 5 pages: Home, About, Services, Gallery and Contact. Mobile-friendly, with an enquiry form."
+    },
+    {
+      "id": "showcase-site",
+      "name": "Showcase Site",
+      "amount": 24999,
+      "scope": "Up to 7 main pages, or up to 10 listing / project / profile pages. The selected structure is agreed in writing."
+    }
+  ],
+  "care": {
+    "id": "website-care",
+    "name": "Website Care Plan",
+    "amount": 999,
+    "scope": "Per month. Hosting handled, backups and 1 small edit a month."
+  },
+  "addons": [
+    {
+      "id": "reel-upgrade",
+      "name": "Make any reel 30 seconds",
+      "amount": 500,
+      "scope": "Additional charge per reel."
+    },
+    {
+      "id": "extra-reel",
+      "name": "Extra 15s reel for plan clients",
+      "amount": 1299,
+      "scope": "For current monthly plan clients."
+    },
+    {
+      "id": "single-post",
+      "name": "Single static post",
+      "amount": 399,
+      "scope": "1 static creative."
+    },
+    {
+      "id": "five-posts",
+      "name": "5 posts",
+      "amount": 1499,
+      "scope": "5 static creatives."
+    },
+    {
+      "id": "ten-posts",
+      "name": "10 posts",
+      "amount": 2499,
+      "scope": "10 static creatives."
+    },
+    {
+      "id": "cafe-menu",
+      "name": "Cafe menu page",
+      "amount": 5999,
+      "scope": "Menu, timings, map and WhatsApp. No ordering."
+    },
+    {
+      "id": "listing-pack",
+      "name": "Real estate Listing Pack",
+      "amount": 2999,
+      "scope": "Per property: 30-second reel + 5 static posts."
+    },
+    {
+      "id": "starter-identity",
+      "name": "Logo + starter identity",
+      "amount": 4999,
+      "scope": "A logo and starter visual identity; scope agreed in writing."
+    }
+  ],
+  "excluded": [
+    "On-site shoots",
+    "Drone footage",
+    "Booking engines",
+    "Online stores",
+    "Payment systems",
+    "Paid ads",
+    "SEO",
+    "Domain and third-party subscriptions"
+  ],
+  "custom": [
+    "Custom production",
+    "Booking engines",
+    "Online stores",
+    "Payments",
+    "Portals",
+    "Integrations",
+    "More than 10 pages"
+  ]
+}

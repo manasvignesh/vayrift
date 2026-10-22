@@ -1,0 +1,319 @@
+/* Defined-scope offers: reuse the studio's editorial typography and warm palette. */
+[hidden] {
+  display: none !important;
+}
+.pricing-page {
+  max-width: 1440px;
+  margin: auto;
+}
+.pricing-intro > p:not(.eyebrow) {
+  max-width: 65ch;
+}
+.draft-pricing {
+  padding: 16px 24px;
+  background: #f4e8cc;
+  color: #4d3514;
+  border: 1px solid #ba9760;
+  margin: 24px 0;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.pricing-section {
+  padding: clamp(32px, 5vw, 72px) 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 110px;
+}
+.pricing-section > p {
+  max-width: 80ch;
+  line-height: 1.7;
+}
+.pricing-section h2 {
+  font-size: clamp(28px, 3.8vw, 50px);
+  line-height: 1.15;
+  margin: 12px 0 24px;
+  letter-spacing: -0.035em;
+}
+.offer-ladder,
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.offer-ladder {
+  list-style: decimal;
+  padding-left: 24px;
+}
+.offer-ladder li {
+  padding: 12px 20px 12px 0;
+  line-height: 1.7;
+}
+.offer-card {
+  padding: clamp(20px, 2.5vw, 36px);
+  border: 1px solid var(--line);
+  background: var(--paper-card);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  min-width: 0;
+}
+.offer-card h3 {
+  font-size: 28px;
+  line-height: 1.15;
+}
+.offer-card .eyebrow {
+  display: none;
+}
+.offer-card p {
+  line-height: 1.7;
+  margin: 0;
+}
+.offer-card .offer-price {
+  font-size: clamp(30px, 3.1vw, 45px);
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.offer-price small {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+.offer-card .btn {
+  margin-top: auto;
+}
+.offer-quarter {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.offer-care {
+  padding: 24px;
+  background: var(--paper-warm);
+  margin-top: 24px;
+  line-height: 1.8;
+}
+.pricing-table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  overscroll-behavior-x: contain;
+}
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: left;
+  line-height: 1.6;
+}
+.pricing-table caption {
+  text-align: left;
+  padding: 18px;
+  font-size: 14px;
+}
+.pricing-table th,
+.pricing-table td {
+  padding: 18px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+.pricing-table thead {
+  background: var(--paper-warm);
+}
+.pricing-table td:nth-child(2) {
+  white-space: nowrap;
+}
+.exclusions ul {
+  columns: 2;
+  line-height: 2;
+  padding-left: 20px;
+}
+.pricing-faq details {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+.pricing-faq summary {
+  cursor: pointer;
+  font-size: 19px;
+}
+.pricing-faq details p {
+  max-width: 75ch;
+  line-height: 1.8;
+  margin-top: 16px;
+}
+.sector-picker select {
+  display: block;
+  padding: 14px;
+  border: 1px solid var(--muted);
+  background: var(--paper-card);
+  color: var(--ink);
+  max-width: 100%;
+  width: 440px;
+  margin: 12px 0 20px;
+  font: inherit;
+}
+.sector-recommendations p {
+  padding: 14px 0;
+  line-height: 1.8;
+  border-bottom: 1px solid var(--line);
+}
+.sector-recommendations .btn {
+  margin-left: 10px;
+}
+.pricing-freshness {
+  font-size: 13px;
+}
+.entry-offers {
+  padding: 36px 0;
+  line-height: 1.8;
+}
+.entry-offers a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 24px;
+}
+.sample-card {
+  min-width: 0;
+}
+.sample-card p {
+  line-height: 1.7;
+  margin: 16px 0;
+}
+.sample-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  background: var(--ink-deep);
+}
+.sample-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.contact-links [data-whatsapp] {
+  white-space: normal;
+}
+.contact-links {
+  flex-wrap: wrap;
+}
+.pricing-page a:focus-visible,
+.pricing-page select:focus-visible,
+.pricing-page summary:focus-visible,
+.pricing-table-scroll:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 5px;
+}
+.pricing-page .eyebrow,
+.pricing-freshness {
+  color: var(--muted);
+}
+.pricing-page .btn {
+  white-space: normal;
+  text-align: left;
+}
+.how-we-price {
+  padding: 32px 0;
+  line-height: 1.8;
+  max-width: 70ch;
+}
+@media (max-width: 1000px) {
+  .desktop-nav {
+    gap: 16px;
+  }
+  .offer-grid {
+    gap: 12px;
+  }
+  .offer-card {
+    padding: 22px 16px;
+  }
+}
+@media (max-width: 700px) {
+  .offer-grid,
+  .offer-ladder {
+    grid-template-columns: 1fr;
+  }
+  .pricing-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pricing-intro h1 {
+    font-size: clamp(42px, 11vw, 68px);
+  }
+  .exclusions ul {
+    columns: 1;
+  }
+  .sector-recommendations .btn {
+    margin: 12px 0 0;
+    display: block;
+  }
+  .pricing-table-scroll {
+    width: 100%;
+    min-width: 0;
+  }
+  .pricing-section {
+    min-width: 0;
+  }
+  .pricing-page .lf-cta {
+    display: block;
+  }
+  .pricing-page .lf-cta .btn {
+    margin-top: 24px;
+  }
+  .draft-pricing {
+    padding: 16px;
+  }
+  .sample-card h3 {
+    overflow-wrap: anywhere;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  .pricing-page * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Keep fixed-offer content readable at narrow device widths. */
+.entry-offers {
+  font-size: 15px;
+}
+.home-hero-copy .entry-offers {
+  max-width: 56ch;
+  padding: 8px 0 26px;
+}
+.sample-sector {
+  scroll-margin-top: 110px;
+}
+a,
+button,
+input,
+select,
+textarea,
+summary {
+  touch-action: manipulation;
+}
+video {
+  max-width: 100%;
+}
+
+@media (min-width: 701px) {
+  .pricing-page {
+    padding-left: clamp(28px, 4vw, 64px);
+    padding-right: clamp(28px, 4vw, 64px);
+  }
+  .pricing-page .pricing-intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
