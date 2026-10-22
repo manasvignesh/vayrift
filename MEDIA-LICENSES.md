@@ -12,3 +12,7 @@ There are no fabricated client endorsements, testimonials, awards or performance
 - src/assets/alankarii-website.png: screenshot of https://alankarii.vercel.app/, a website the studio owner confirmed they built and explicitly requested for the portfolio. Presented as a founder project, without unverified client or business-result claims.
 
 Alankarii mobile and detail PNGs are actual browser captures of the same founder-owned website, captured for its project presentation. No third-party agency imagery is included.
+
+## Pricing and samples update — 22 October 2026
+
+No new media was added or recompressed. `src/samples.json` references only the existing owner-authorized property MP4 and its existing poster. Empty sectors render no placeholder media. The manifest supports optional local WebVTT captions when an accurate licensed caption file is supplied; no caption asset or new sample is claimed.
