@@ -16,3 +16,7 @@ Alankarii mobile and detail PNGs are actual browser captures of the same founder
 ## Pricing and samples update — 22 October 2026
 
 No new media was added or recompressed. `src/samples.json` references only the existing owner-authorized property MP4 and its existing poster. Empty sectors render no placeholder media. The manifest supports optional local WebVTT captions when an accurate licensed caption file is supplied; no caption asset or new sample is claimed.
+
+## Live founder-project preview
+
+The existing Alankarii screenshots now link to a user-initiated live iframe of the same owner-authorized founder site. No remote media has been copied into this repository. The external site and its evolving content remain separately hosted; its live preview is clearly identified as a founder project.

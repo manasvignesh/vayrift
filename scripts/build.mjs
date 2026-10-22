@@ -174,7 +174,7 @@ export async function build({
       text = text.replace(
         "</head>",
         discoveryHead(brand, pricing, rel).html +
-          '<link rel="stylesheet" href="offers.css"><script src="offers.js" defer></script><link rel="stylesheet" href="polish.css"><script src="polish.js" defer></script></head>',
+          '<link rel="stylesheet" href="offers.css"><script src="offers.js" defer></script><link rel="stylesheet" href="polish.css"><script src="polish.js" defer></script><link rel="stylesheet" href="live-preview.css"><script src="live-preview.js" defer></script></head>',
       );
       if (!brand.contact_email)
         text = text.replace(

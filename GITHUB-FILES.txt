@@ -31,6 +31,8 @@ src/home-premium.css
 src/home.css
 src/home.js
 src/index.html
+src/live-preview.css
+src/live-preview.js
 src/motion.js
 src/offers.css
 src/offers.js
