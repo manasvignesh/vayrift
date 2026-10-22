@@ -11,7 +11,28 @@
   "inquiry_enabled": false,
   "inquiry_endpoint": "/api/inquiry",
   "turnstile_site_key": "",
-  "founders": [],
+  "founders": [
+    {
+      "name": "Manas Vignesh",
+      "role": "Co-Founder, VAYRIFT Studio",
+      "linkedin": "https://www.linkedin.com/in/manas-vignesh/",
+      "bio": "Manas’s public background includes MLR Institute of Technology and involvement with the Center for Innovation and Entrepreneurship. His interests include technology, AI and hackathons.",
+      "portrait": "assets/manas-vignesh.webp",
+      "portrait_confirmed": true,
+      "portrait_width": 889,
+      "portrait_height": 1033
+    },
+    {
+      "name": "Siddharth Lagisetty",
+      "role": "Co-Founder, VAYRIFT Studio",
+      "linkedin": "https://www.linkedin.com/in/siddharth-lagisetty-1b31b63bb/",
+      "bio": "Siddharth co-founded VAYRIFT Studio with Manas and is part of the studio’s two-person team.",
+      "portrait": "assets/siddharth-lagisetty.webp",
+      "portrait_confirmed": true,
+      "portrait_width": 800,
+      "portrait_height": 800
+    }
+  ],
   "indexable": false,
   "whatsapp_number": "",
   "phone": "",

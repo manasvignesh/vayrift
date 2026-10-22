@@ -29,7 +29,7 @@ const temporary = async (fn) => {
 
 test("all seven pages use central pricing, navigation, honest labels and safe default gates", async () =>
   temporary(async (out) => {
-    await build({ outDir: out, pricing: { approved: false }, buildDate: "2026-10-22" });
+    await build({ outDir: out, brand: { founders: [] }, pricing: { approved: false }, buildDate: "2026-10-22" });
     for (const page of pages) {
       const text = await html(out, page);
       assert.ok(text.includes("VAYRIFT Studio"));

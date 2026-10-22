@@ -66,3 +66,23 @@ Pricing is **draft** (`approved: false`). The pricing page displays a visible wa
 - Confirm GST treatment and edit pricing_note if needed. Define the written quotation and permission-to-use-assets process.
 - Approve pricing and deliberately enable indexable only when ready. inquiry_enabled must remain false until a separately configured and verified delivery adapter exists.
 - Run `npm test`, `npm run build`, `npm run audit`. Deploy only after review; this implementation does not push or deploy.
+
+## Shared visual and interaction finish
+
+`src/polish.css` and `src/polish.js` provide the shared typography, sticky-header feedback, native page transitions where supported, one-time content entrances, disclosure animations and form-field feedback. Unsupported browsers retain ordinary navigation. Reduced-motion preferences disable the decorative transitions. Service tabs, menus, inquiry preparation and project previews retain their existing vanilla implementations. `src/home-premium.css` provides the website-led homepage composition; all project imagery remains owner-authorized and honestly labelled. The UI pass adds no dependencies, new media, provider requests or automatic sending.
+
+## Click-to-load live project previews
+
+Homepage, Services, Work and the Alankarii case study can open the real founder-built website in a keyboard-accessible dialog. `src/live-preview.js` creates the iframe only after a visitor clicks a live-preview link, with desktop/mobile viewport controls, Escape/Close and a permanent external new-tab link. Closing removes the iframe and restores focus. There is no background live-site request from initial screenshots. Native links still work without JavaScript. The iframe is restricted to the fixed `https://alankarii.vercel.app/` URL; local CSP permits that exact frame origin. The remote site can change its embedding policy later; the new-tab link is the fallback. Browser security limits features within sandboxed frames. No purchase or inquiry is automatically submitted by the portfolio.
+
+## About page and founder profiles
+
+`src/about.html`, `src/about.css` and `src/about.js` implement the seven-section studio introduction with an original CSS paper collage, story, founders, actual service scopes, beliefs and contact/portfolio links. `scripts/about-content.mjs` renders escaped founder data from `brand.json`. Supplied founder names and LinkedIn URLs are configured there. Manas’s biography is limited to the background supplied by the owner; Siddharth’s stays at the co-founder level. No employment titles, qualifications or achievements are inferred.
+
+Portrait rendering is controlled by each founder’s local portrait path and portrait_confirmed flag. Unconfirmed profiles use clearly labelled initials placeholders, not synthetic portraits. Before adding a photograph, confirm who it depicts and permission to use it, optimize the image locally, add it to MEDIA-LICENSES.md and the audit media allowlist, then configure its local assets/ path and portrait_confirmed. No unconfirmed photo is fetched or rendered. The exact founding anecdotes/dates and Siddharth’s detailed background still require owner confirmation; current story copy describes the studio’s purpose without inventing a chronology.
+
+Local About verification artifacts are in ignored `qa/about/`: desktop/tablet/mobile screenshots and results.json. Pricing is checked against a pre-change SHA-256. No push or deployment is part of this update.
+
+Manas’s black-shirt photograph was identified by the owner on 22 October 2026 and is configured as `assets/manas-vignesh.webp`. The optimized local asset is recorded in the media register. Siddharth’s photo remains unconfirmed and his card retains its labelled initials placeholder.
+
+Siddharth’s photograph was subsequently supplied and is configured as `assets/siddharth-lagisetty.webp`. Both founder photos are now configured; their detailed biography restrictions remain unchanged. The close-up headshot is contained within the shared card frame so it is not cropped through the face.

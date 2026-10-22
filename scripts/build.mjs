@@ -1,3 +1,4 @@
+import {renderFounders} from './about-content.mjs';
 import {
   escape as htmlEscape,
   money,
@@ -55,6 +56,7 @@ export async function build({
     )
       throw Error("Invalid public phone");
   }
+  const founderContent = await renderFounders(root, brand.founders);
   const tokens = {
     ...brand,
     pilot_price: money(pricing.pilot.amount),
@@ -116,6 +118,7 @@ export async function build({
       ? ""
       : await readFile(src, "utf8");
     text = text
+      .replace("{{founders_content}}", founderContent)
       .replace("{{pricing_content}}", pricingContent(pricing, brand, buildDate))
       .replace("{{sample_reels}}", samples.html)
       .replace(
@@ -174,7 +177,7 @@ export async function build({
       text = text.replace(
         "</head>",
         discoveryHead(brand, pricing, rel).html +
-          '<link rel="stylesheet" href="offers.css"><script src="offers.js" defer></script></head>',
+          '<link rel="stylesheet" href="offers.css"><script src="offers.js" defer></script><link rel="stylesheet" href="polish.css"><script src="polish.js" defer></script><link rel="stylesheet" href="live-preview.css"><script src="live-preview.js" defer></script></head>',
       );
       if (!brand.contact_email)
         text = text.replace(

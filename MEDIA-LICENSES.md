@@ -16,3 +16,19 @@ Alankarii mobile and detail PNGs are actual browser captures of the same founder
 ## Pricing and samples update — 22 October 2026
 
 No new media was added or recompressed. `src/samples.json` references only the existing owner-authorized property MP4 and its existing poster. Empty sectors render no placeholder media. The manifest supports optional local WebVTT captions when an accurate licensed caption file is supplied; no caption asset or new sample is claimed.
+
+## Live founder-project preview
+
+The existing Alankarii screenshots now link to a user-initiated live iframe of the same owner-authorized founder site. No remote media has been copied into this repository. The external site and its evolving content remain separately hosted; its live preview is clearly identified as a founder project.
+
+## About page — 22 October 2026
+
+The paper collage and founder initials are original CSS and typographic compositions. No founder photo or synthetic portrait has been added. MV and SL are explicitly labelled portrait placeholders. A real photograph may be used only after its identity and authorization are confirmed; portrait_confirmed is false for both profiles. Any later image must be recorded here and reviewed by the asset audit.
+
+## Confirmed Manas portrait — 22 October 2026
+
+- `src/assets/manas-vignesh.webp`: optimized encoding of the actual user-supplied black-shirt photograph. The user confirmed that it depicts Manas Vignesh and supplied it for the About page. No synthetic portrait, facial alteration, background replacement or generative processing was used. The source image is retained by the user; display cropping is CSS only. Siddharth’s profile remains a clearly labelled initials placeholder until his photograph is supplied and identified.
+
+## Supplied Siddharth portrait — 22 October 2026
+
+- `src/assets/siddharth-lagisetty.webp`: optimized encoding of the actual photograph supplied in response to the request for Siddharth’s photo (original filename 1774969053354.jpeg). No synthetic portrait or facial alteration was used. The original photograph remains with the user. Both founder profiles now use user-supplied photographs.
