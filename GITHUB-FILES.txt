@@ -27,6 +27,7 @@ src/contact.html
 src/experience.css
 src/experience.js
 src/finish.css
+src/home-premium.css
 src/home.css
 src/home.js
 src/index.html
