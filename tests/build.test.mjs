@@ -29,7 +29,7 @@ const temporary = async (fn) => {
 
 test("all seven pages use central pricing, navigation, honest labels and safe default gates", async () =>
   temporary(async (out) => {
-    await build({ outDir: out, buildDate: "2026-10-22" });
+    await build({ outDir: out, pricing: { approved: false }, buildDate: "2026-10-22" });
     for (const page of pages) {
       const text = await html(out, page);
       assert.ok(text.includes("VAYRIFT Studio"));
@@ -136,7 +136,7 @@ test("indexing requires all three gates and removes stale sitemap when turned of
       { indexable: true, production_url: "https://studio.example.test" },
       { indexable: false, production_url: "https://studio.example.test" },
     ]) {
-      await build({ outDir: out, brand });
+      await build({ outDir: out, pricing: { approved: false }, brand });
       assert.match(
         await readFile(join(out, "robots.txt"), "utf8"),
         /Disallow: \//,
